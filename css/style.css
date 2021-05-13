@@ -39,8 +39,7 @@ body {
 }
 
 .content {
-    margin-top: 9px;
-    margin-bottom: 90px;
+    margin: 9px 0 0 0;
     padding: 49px 0 90px 0;
     display: flex;
     flex-direction: column;
@@ -53,7 +52,6 @@ body {
 }
 
 .content__title {
-    max-width: 411px;
     font-size: 22px;
 }
 
@@ -106,25 +104,28 @@ body {
     margin-right: 0;
 }
 
-.test5 {
+.borjomi-block__lemon-image {
     position: absolute;
     left: 280px;
     top: 190px;
 }
 
-@media screen and (max-width: 620px) {
+.footer {
+    padding-top: 30px;
+    height: 80px;
+    text-align: center;
+    font-size: 15px;
+}
 
+@media screen and (max-width: 640px) {
     .header__main-title {
         margin-top: 19px;
         font-size: 42px;
     }
 
     .content {
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #AFDCDA;
+        margin: 20px 0 0 0;
+        padding: 41px 0 119px 0;
     }
 
     .content__title-wrapper {
@@ -147,22 +148,17 @@ body {
         font-size: 20px;
     }
 
-    .content__borjomi-block {
-        margin-top: 30px;
+    .content__socials-block {
+        margin: 30px 0 0 25px;
     }
 
+    .content__borjomi-block {
+        margin-top: 45px;
+    }
 
     .borjomi-block__image {
         margin-right: 10px;
         height: 181px;
-    }
-
-    .borjomi-block__image {
-    }
-
-    .test5 {
-        top: 150px;
-        left: 150px;
     }
 
     .borjomi-block__image_last {
@@ -173,10 +169,49 @@ body {
         margin-left: 0;
     }
 
+    .borjomi-block__lemon-image {
+        top: 126px;
+        left: 148px;
+    }
+}
 
-
-
-    .borjomi-block__image_small {
+@media screen and (max-width: 415px) {
+    .content__title-wrapper {
+        margin: 0 auto;
+        padding-left: 30px;
+        max-width: 290px;
     }
 
+    .content__title {
+        font-size: 20px;
+    }
+
+    .content__title_bold {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .content__subtitle {
+        margin-top: 34px;
+        max-width: 308px;
+        font-size: 16px;
+    }
+
+    .borjomi-block__image {
+        margin-right: 8px;
+        height: 141px;
+    }
+
+    .borjomi-block__image_last {
+        margin-right: 0;
+    }
+
+    .borjomi-block__image:first-child {
+        margin-left: 0;
+    }
+
+    .borjomi-block__lemon-image {
+        top: 97px;
+        left: 96px;
+    }
 }
